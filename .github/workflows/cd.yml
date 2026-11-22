@@ -108,7 +108,7 @@ jobs:
         with:
           toolchain: 1.97.1
           targets: "${{ matrix.target }}"
-      - uses: actions/setup-go@v7
+      - uses: actions/setup-go@v7.1.0
         with:
           go-version-file: crates/bux-gvproxy/gvproxy-bridge/go.mod
       - uses: Swatinem/rust-cache@v2
